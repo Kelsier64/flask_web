@@ -12,7 +12,19 @@ popcat1.addEventListener("mousedown", function () {
     popcat2.style.display = "block";
 });
 
+popcat1.addEventListener("touchstart", function () {
+    score += 1;
+    scoreElement.innerText = score;
+    popcat1.style.display = "none";
+    popcat2.style.display = "block";
+});
+
 popcat2.addEventListener("mouseup", function () {
+    popcat2.style.display = "none";
+    popcat1.style.display = "block";
+});
+
+popcat2.addEventListener("touchend", function () {
     popcat2.style.display = "none";
     popcat1.style.display = "block";
 });

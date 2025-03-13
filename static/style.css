@@ -10,3 +10,13 @@ img {
 }
 
 /* Remove the img:active effect */
+
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+    body {
+        text-align: center;
+    }
+}
